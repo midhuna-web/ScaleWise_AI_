@@ -1,0 +1,133 @@
+{
+    "project": {
+        "name": "ScaleWise",
+        "description": "AI Copilot for Scalable Cell-Culture Bioprocess Design",
+        "data_type": "Synthetic demonstration data"
+    },
+    "readiness": {
+        "overall_score": 71.64531282529441,
+        "status": "VALIDATE",
+        "categories": {
+            "Biological Condition": {
+                "weight": 35,
+                "score": 72.27771246898777
+            },
+            "Oxygen Transfer": {
+                "weight": 20,
+                "score": 70.0
+            },
+            "Hydrodynamic Condition": {
+                "weight": 20,
+                "score": 36.7405673057435
+            },
+            "Process Control": {
+                "weight": 15,
+                "score": 100.0
+            },
+            "Model Reliability": {
+                "weight": 10,
+                "score": 100.0
+            }
+        }
+    },
+    "target_scale": {
+        "target_scale_L": 20.0,
+        "representative_condition": {
+            "scale_L": 20.0,
+            "working_volume_L": 17.36052245,
+            "tank_diameter_m": 0.217419037,
+            "impeller_diameter_m": 0.072019757,
+            "impeller_type": "Rushton",
+            "rpm": 217.360134025,
+            "aeration_vvm": 0.48712885250000004,
+            "gas_flow_L_min": 8.45681137986899,
+            "temperature_C": 37.03560072,
+            "pH": 7.003460938,
+            "DO_percent": 53.629276446000006,
+            "pressure_bar": 1.046954884,
+            "feed_rate_mL_h": 0.334726041,
+            "initial_VCD_million_cells_mL": 0.68002331,
+            "PV_engineered_W_L": 0.014312365127262566,
+            "Re_engineered": 18790.223515832175,
+            "tip_speed_engineered_m_s": 0.8196532537127074,
+            "kLa_per_h": 5.381555983066293,
+            "oxygen_driving_force_percent": 44.263921404,
+            "mixing_time_s": 168.40528445207084,
+            "shear_proxy": 0.8196532537127074,
+            "scale_ratio": 10.0,
+            "volume_ratio": 11.110490754935512,
+            "gas_flow_per_L": 0.48712885250000004,
+            "rpm_per_impeller_diameter": 3018.062585590229,
+            "kLa_per_aeration": 11.047499969356243,
+            "mixing_efficiency_proxy": 0.005938055941971381,
+            "DO_saturation_ratio": 0.5478345546355038,
+            "VCD_million_cells_mL": 0.6247142950120269,
+            "viability_percent": 97.9683896368234,
+            "growth_rate_per_h": -0.004999999999999999,
+            "lactate_g_L": 0.21605544960390718,
+            "biological_ok": true,
+            "PV_ok": true,
+            "kLa_ok": true,
+            "mixing_ok": true,
+            "tip_ok": true,
+            "DO_ok": true,
+            "constraint_score": 100.0,
+            "status": "ACCEPTABLE",
+            "biological_score": 72.27771246898777,
+            "oxygen_score": 70.0,
+            "hydrodynamic_score": 36.7405673057435,
+            "process_control_score": 100.0,
+            "model_reliability_score": 100.0,
+            "overall_score": 71.64531282529441,
+            "readiness_status": "VALIDATE"
+        },
+        "operating_window": {
+            "agitation_rpm": {
+                "min": 152.4397051,
+                "representative": 217.360134025,
+                "max": 239.000277
+            },
+            "aeration_vvm": {
+                "min": 0.223210073,
+                "representative": 0.48712885250000004,
+                "max": 0.575101779
+            },
+            "DO_percent": {
+                "min": 44.87010563150001,
+                "representative": 53.629276446000006,
+                "max": 53.629276446000006
+            }
+        }
+    },
+    "biology": {
+        "VCD_million_cells_mL": 0.6247142950120269,
+        "viability_percent": 97.9683896368234,
+        "growth_rate_per_h": -0.004999999999999999,
+        "lactate_g_L": 0.21605544960390718
+    },
+    "engineering": {
+        "kLa_per_h": 5.381555983066293,
+        "mixing_time_s": 168.40528445207084,
+        "DO_percent": 53.629276446000006,
+        "pH": 7.003460938,
+        "temperature_C": 37.03560072,
+        "rpm": 217.360134025,
+        "aeration_vvm": 0.48712885250000004
+    },
+    "risk_guardian": {
+        "maximum_failure_probability": 0.9999999999999996,
+        "mean_failure_probability": 0.10143429950290046,
+        "guardian_status_distribution": {
+            "\ud83d\udfe2 STABLE": 4509,
+            "\ud83d\udd34 CRITICAL": 497,
+            "\ud83d\udfe0 HIGH RISK": 20,
+            "\ud83d\udfe1 WATCH": 14
+        },
+        "alert_threshold": 0.95
+    },
+    "ai_recommendation": {
+        "status": "VALIDATE",
+        "target_scale_L": 20.0,
+        "recommendation": "Use the representative operating condition as the starting point for target-scale validation. The operating window should be treated as a decision-support range and experimentally validated before production use."
+    }
+}
